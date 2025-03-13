@@ -51,6 +51,29 @@
             display: block;
             margin: 20px auto;
         }
+	.publication {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .publication img {
+            width: 250px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .publication-details {
+            flex: 1;
+        }
+        .publication-details a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -67,7 +90,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#research">CV</a></li>
+                <li><a href="Vivek_Madhavaram_latest_CV (1).pdf">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -86,10 +109,13 @@ Beyond research, I enjoy gardening, painting, and swimming in my free time.</p>
                 
         <section id="publications">
             <h2>Publications</h2>
-            <ul>
-                <li><strong>Paper Title 1</strong> - Conference/Journal Name (Year)</li>
-                <li><strong>Paper Title 2</strong> - Conference/Journal Name (Year)</li>
-            </ul>
+            <div class="publication">
+                <img src="teaser.png" alt="Paper 1 Thumbnail">
+                <div class="publication-details">
+                    <strong>Towards a Training Free Approach for 3D Scene Editing (WACV 2025)</strong><br>
+                    <b>Vivek Madhavaram</b>, Shivangana Rawat, Chaitanya Devaguptapu, Charu Sharma, Manohar Kaul<br>
+                    <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Madhavaram_Towards_a_Training_Free_Approach_for_3D_Scene_Editing_WACV_2025_paper.pdf">PDF&nbsp;</a> <a href="https://vivekmadhavaram.github.io/FreeEdit_page/">Project Page&nbsp;&nbsp;</a><a href="https://www.youtube.com/watch?v=hmpQZUqD2tA">Video</a>
+                </div>
         </section>
         
         <section id="contact">
